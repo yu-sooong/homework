@@ -7,7 +7,7 @@ SELECT
     SUM(o.amount) AS may_amount
 FROM
     orders o
-        JOIN
+JOIN
     bnbs bnb ON o.bnb_id = bnb.id
 WHERE
     o.currency = 'TWD'
